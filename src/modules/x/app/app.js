@@ -1,7 +1,7 @@
 import { LightningElement, track } from 'lwc';
 
 export default class App extends LightningElement {
-  @track data = { foo: 'foaa'}
+  @track data = { foo: 'foa'}
 
   connectedCallback() {
     setInterval(() => {
@@ -10,6 +10,6 @@ export default class App extends LightningElement {
   }
 
   renderedCallback() {
-
+    
   }
 }
