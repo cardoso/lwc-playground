@@ -13,9 +13,8 @@ export default defineConfig((args) => {
         output: {
             file: 'dist/main.js',
             format: 'esm',
-            sourcemap: 'inline'
+            sourcemap: "inline"
         },
-
         plugins: [
             replace({
                 'process.env.NODE_ENV': JSON.stringify(__ENV__),

@@ -8,8 +8,4 @@ export default class App extends LightningElement {
       this.data = { foo: 'foa' }
     }, 1000)
   }
-
-  renderedCallback() {
-    
-  }
 }

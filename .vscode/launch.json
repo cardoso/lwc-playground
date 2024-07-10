@@ -1,0 +1,98 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node-terminal",
+            "name": "Launch Node Development Server",
+            "request": "launch",
+            "command": "npm run dev",
+            "presentation": {
+                "hidden": true
+            }
+        },
+        {
+            "type": "msedge",
+            "name": "Launch Microsoft Edge",
+            "request": "launch",
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
+            "disableNetworkCache": true,
+            "enableContentValidation": true,
+            "enableDWARF": true,
+            "pauseForSourceMap": true,
+            "showAsyncStacks": true,
+            "smartStep": true,
+            "sourceMapRenames": true,
+            "sourceMaps": true,
+            "trace": true,
+            "url": "http://localhost:3000",
+            "presentation": {
+                "hidden": true
+            }
+        },
+        {
+            "type": "msedge",
+            "name": "Launch Microsoft Edge in headless mode",
+            "request": "launch",
+            "runtimeArgs": [
+                "--headless",
+                "--remote-debugging-port=9222"
+            ],
+            "disableNetworkCache": true,
+            "enableContentValidation": true,
+            "enableDWARF": true,
+            "pauseForSourceMap": true,
+            "showAsyncStacks": true,
+            "smartStep": true,
+            "sourceMapRenames": true,
+            "sourceMaps": true,
+            "trace": true,
+            "url": "http://localhost:3000",
+            "presentation": {
+                "hidden": true
+            }
+        },
+        {
+            "type": "vscode-edge-devtools.debug",
+            "name": "Open Edge DevTools",
+            "request": "attach",
+            "url": "http://localhost:3000",
+            "sourceMaps": true,
+            "presentation": {
+                "hidden": true
+            }
+        }
+    ],
+    "compounds": [
+        {
+            "name": "Launch Node Development Server and Edge",
+            "stopAll": true,
+            "configurations": [
+                "Launch Node Development Server",
+                "Launch Microsoft Edge"
+            ],
+        },
+        {
+            "name": "Launch Node Development Server and Edge Headless",
+            "configurations": [
+                "Launch Node Development Server",
+                "Launch Microsoft Edge in headless mode"
+            ],
+        },
+        {
+            "name": "Launch Edge Headless and attach DevTools",
+            "configurations": [
+                "Launch Microsoft Edge in headless mode",
+                "Open Edge DevTools"
+            ]
+        },
+        {
+            "name": "Launch Edge and attach DevTools",
+            "configurations": [
+                "Launch Microsoft Edge",
+                "Open Edge DevTools"
+            ]
+        }
+    ]
+}
