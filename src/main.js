@@ -1,4 +1,3 @@
-
 import * as lwc from "lwc";
 
 /**

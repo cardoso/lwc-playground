@@ -12,27 +12,6 @@
         },
         {
             "type": "msedge",
-            "name": "Launch Microsoft Edge",
-            "request": "launch",
-            "runtimeArgs": [
-                "--remote-debugging-port=9222"
-            ],
-            "disableNetworkCache": true,
-            "enableContentValidation": true,
-            "enableDWARF": true,
-            "pauseForSourceMap": true,
-            "showAsyncStacks": true,
-            "smartStep": true,
-            "sourceMapRenames": true,
-            "sourceMaps": true,
-            "trace": true,
-            "url": "http://localhost:3000",
-            "presentation": {
-                "hidden": true
-            }
-        },
-        {
-            "type": "msedge",
             "name": "Launch Microsoft Edge in headless mode",
             "request": "launch",
             "runtimeArgs": [
@@ -70,30 +49,9 @@
             "stopAll": true,
             "configurations": [
                 "Launch Node Development Server",
-                "Launch Microsoft Edge",
-                "Open Edge DevTools"
-            ],
-        },
-        {
-            "name": "Launch Node Development Server and Edge Headless",
-            "configurations": [
-                "Launch Node Development Server",
-                "Launch Microsoft Edge in headless mode"
-            ],
-        },
-        {
-            "name": "Launch Edge Headless and attach DevTools",
-            "configurations": [
                 "Launch Microsoft Edge in headless mode",
                 "Open Edge DevTools"
-            ]
-        },
-        {
-            "name": "Launch Edge and attach DevTools",
-            "configurations": [
-                "Launch Microsoft Edge",
-                "Open Edge DevTools"
-            ]
+            ],
         }
     ]
 }

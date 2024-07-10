@@ -20,7 +20,11 @@ export default defineConfig((args) => {
                 'process.env.NODE_ENV': JSON.stringify(__ENV__),
                 preventAssignment: true,
             }),
-            lwc(),
+            lwc({
+                modules: [
+                    { npm: "@salesforce-ux/design-system" }
+                ]
+            }),
             args.watch &&
             serve({
                 open: false,

@@ -12,6 +12,7 @@
     "@lwc/rollup-plugin": "7.1.0",
     "@playwright/test": "^1.45.1",
     "@rollup/plugin-replace": "^5.0.7",
+    "@salesforce-ux/design-system": "^2.24.5",
     "@types/node": "^20.14.10",
     "lwc": "^7.1.0",
     "rollup": "^3.29.4",
