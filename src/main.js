@@ -8,7 +8,7 @@ import App from "x/app";
 
 
 if (process.env.NODE_ENV === "development") {
-    App.prototype.renderedCallback = function() {
+    App.prototype.renderedCallback = function () {
         performance.mark("renderedCallback");
         App.renders = App.renders || 0;
         App.renders++;

@@ -22,10 +22,10 @@ export default defineConfig((args) => {
             }),
             lwc(),
             args.watch &&
-                serve({
-                    open: false,
-                    port: 3000,
-                }),
+            serve({
+                open: false,
+                port: 3000,
+            }),
             args.watch && livereload(),
         ],
     };

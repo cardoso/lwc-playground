@@ -70,7 +70,8 @@
             "stopAll": true,
             "configurations": [
                 "Launch Node Development Server",
-                "Launch Microsoft Edge"
+                "Launch Microsoft Edge",
+                "Open Edge DevTools"
             ],
         },
         {

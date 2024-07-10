@@ -9,11 +9,11 @@
     "build": "NODE_ENV=production rollup -c"
   },
   "devDependencies": {
-    "@lwc/rollup-plugin": "7.0.5",
+    "@lwc/rollup-plugin": "7.1.0",
     "@playwright/test": "^1.45.1",
     "@rollup/plugin-replace": "^5.0.7",
     "@types/node": "^20.14.10",
-    "lwc": "^7.0.5",
+    "lwc": "^7.1.0",
     "rollup": "^3.29.4",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-serve": "^2.0.2"
