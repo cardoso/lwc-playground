@@ -9,7 +9,6 @@ const __ENV__ = process.env.NODE_ENV ?? 'development';
 export default defineConfig((args) => {
     return {
         input: 'src/main.js',
-
         output: {
             file: 'dist/main.js',
             format: 'esm',
@@ -23,11 +22,12 @@ export default defineConfig((args) => {
             lwc({
                 modules: [
                     { npm: "@salesforce-ux/design-system" }
-                ]
+                ],
+                sourcemap: "inline"
             }),
             args.watch &&
             serve({
-                open: false,
+                open: args.open,
                 port: 3000,
             }),
             args.watch && livereload(),
