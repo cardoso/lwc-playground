@@ -7,12 +7,17 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle('LWC playground');
 });
 
-test('get started link', async ({ page }) => {
-  await page.goto('https://playwright.dev/');
 
-  // Click the get started link.
-  await page.getByRole('link', { name: 'Get started' }).click();
+test('lightning-button functionality', async ({ page }) => {
+  // Navigate to the page containing the lightning-button
+  await page.goto('/');
 
-  // Expects page to have a heading with the name of Installation.
-  await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+  // Locate the lightning-button
+  const button = page.locator('lightning-button');
+
+  // Check if the button is visible
+  await expect(button).toBeVisible();
+
+  // Check the button's label
+  await expect(button).toHaveText('Click me');
 });
