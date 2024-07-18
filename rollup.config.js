@@ -28,7 +28,7 @@ export default defineConfig((args) => {
             args.watch &&
             serve({
                 open: args.open,
-                port: 3000,
+                port: args.port
             }),
             args.watch && livereload(),
         ],

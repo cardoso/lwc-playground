@@ -51,7 +51,7 @@
                 "Launch Node Development Server",
                 "Launch Microsoft Edge in headless mode",
                 "Open Edge DevTools"
-            ],
+            ]
         }
     ]
 }

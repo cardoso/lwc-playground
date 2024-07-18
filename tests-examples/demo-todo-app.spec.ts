@@ -426,12 +426,14 @@ async function checkNumberOfTodosInLocalStorage(page: Page, expected: number) {
 
 async function checkNumberOfCompletedTodosInLocalStorage(page: Page, expected: number) {
   return await page.waitForFunction(e => {
+    // biome-ignore lint/suspicious/noExplicitAny: any is better suited for now
     return JSON.parse(localStorage['react-todos']).filter((todo: any) => todo.completed).length === e;
   }, expected);
 }
 
 async function checkTodosInLocalStorage(page: Page, title: string) {
   return await page.waitForFunction(t => {
+    // biome-ignore lint/suspicious/noExplicitAny: any is better suited for now
     return JSON.parse(localStorage['react-todos']).map((todo: any) => todo.title).includes(t);
   }, title);
 }
